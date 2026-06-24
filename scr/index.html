@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastro de Currículo</h1>
+            <p id="step-indicator">Passo 1 de 4</p>
+            
+            <form id="curriculo-form">
+                <!-- Passo 1: Idade -->
+                <div class="step" id="step-1">
+                    <h2>Qual é a sua idade?</h2>
+                    <input type="number" id="idade" min="14" max="100" placeholder="Digite sua idade" required>
+                    <button type="button" class="btn-next" onclick="validarIdade()">Próximo</button>
+                </div>
+
+                <!-- Passo 2: Tipo de Contratação -->
+                <div class="step" id="step-2" style="display: none;">
+                    <h2>Qual tipo de contratação você deseja?</h2>
+                    <div id="opcoes-contratacao"></div>
+                    <button type="button" class="btn-back" onclick="voltarPasso(1)">Voltar</button>
+                    <button type="button" class="btn-next" onclick="validarContratacao()">Próximo</button>
+                </div>
+
+                <!-- Passo 3: Dados Pessoais -->
+                <div class="step" id="step-3" style="display: none;">
+                    <h2>Dados Pessoais</h2>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo:</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+                    </div>
+                    <button type="button" class="btn-back" onclick="voltarPasso(2)">Voltar</button>
+                    <button type="button" class="btn-next" onclick="validarDadosPessoais()">Próximo</button>
+                </div>
+
+                <!-- Passo 4: Resumo -->
+                <div class="step" id="step-4" style="display: none;">
+                    <h2>Resumo do Cadastro</h2>
+                    <div id="resumo-cadastro"></div>
+                    <button type="button" class="btn-back" onclick="voltarPasso(3)">Voltar</button>
+                    <button type="submit" class="btn-submit">Finalizar Cadastro</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
