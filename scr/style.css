@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #1a1a1a;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -20,22 +20,23 @@ body {
 }
 
 .card {
-    background: white;
-    border-radius: 20px;
+    background: #2d2d2d;
+    border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+    border: 1px solid #3d3d3d;
 }
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 10px;
     font-size: 28px;
 }
 
 #step-indicator {
     text-align: center;
-    color: #666;
+    color: #888;
     margin-bottom: 30px;
     font-size: 14px;
 }
@@ -56,7 +57,7 @@ h1 {
 }
 
 h2 {
-    color: #333;
+    color: #ffffff;
     margin-bottom: 20px;
     font-size: 20px;
 }
@@ -67,16 +68,18 @@ input[type="email"],
 input[type="tel"] {
     width: 100%;
     padding: 15px;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
     font-size: 16px;
     margin-bottom: 20px;
     transition: border-color 0.3s;
+    background: #1a1a1a;
+    color: #ffffff;
 }
 
 input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #c0392b;
 }
 
 .form-group {
@@ -86,7 +89,7 @@ input:focus {
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    color: #333;
+    color: #cccccc;
     font-weight: 500;
 }
 
@@ -95,23 +98,24 @@ input:focus {
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
-    border: 2px solid #e0e0e0;
-    border-radius: 10px;
-    background: white;
+    border: 1px solid #3d3d3d;
+    border-radius: 8px;
+    background: #1a1a1a;
     cursor: pointer;
     transition: all 0.3s;
     text-align: left;
     font-size: 16px;
+    color: #ffffff;
 }
 
 .opcao-contratacao:hover {
-    border-color: #667eea;
-    background: #f8f9ff;
+    border-color: #c0392b;
+    background: #2d2d2d;
 }
 
 .opcao-contratacao.selected {
-    border-color: #667eea;
-    background: #667eea;
+    border-color: #c0392b;
+    background: #c0392b;
     color: white;
 }
 
@@ -149,14 +153,13 @@ input:focus {
 
 .btn-next,
 .btn-submit {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: #c0392b;
     color: white;
 }
 
 .btn-next:hover,
 .btn-submit:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+    background: #a93226;
 }
 
 .btn-next {
@@ -164,16 +167,17 @@ input:focus {
 }
 
 #resumo-cadastro {
-    background: #f8f9ff;
+    background: #1a1a1a;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
     margin-bottom: 20px;
+    border: 1px solid #3d3d3d;
 }
 
 .resumo-item {
     margin-bottom: 15px;
     padding-bottom: 15px;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid #3d3d3d;
 }
 
 .resumo-item:last-child {
@@ -184,12 +188,12 @@ input:focus {
 
 .resumo-label {
     font-weight: 600;
-    color: #667eea;
+    color: #c0392b;
     margin-bottom: 5px;
 }
 
 .resumo-valor {
-    color: #333;
+    color: #cccccc;
 }
 
 .error {
