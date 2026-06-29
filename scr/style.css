@@ -1,9 +1,18 @@
+/* ========================================
+   RESET GLOBAL
+   Remove margens e paddings padrão do navegador
+   ======================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ========================================
+   BODY - CORPO DA PÁGINA
+   Define o fundo com gradiente escuro moderno
+   Centraliza o conteúdo verticalmente e horizontalmente
+   ======================================== */
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 50%, #16213e 100%);
@@ -14,11 +23,20 @@ body {
     padding: 20px;
 }
 
+/* ========================================
+   CONTAINER
+   Limita a largura máxima do formulário
+   ======================================== */
 .container {
     width: 100%;
     max-width: 500px;
 }
 
+/* ========================================
+   CARD - CARTÃO PRINCIPAL
+   Efeito glassmorphism com backdrop blur
+   Sombras elegantes e bordas sutis
+   ======================================== */
 .card {
     background: rgba(45, 45, 45, 0.95);
     backdrop-filter: blur(20px);
@@ -29,6 +47,10 @@ body {
     border: none;
 }
 
+/* ========================================
+   H1 - TÍTULO PRINCIPAL
+   Gradiente de texto para efeito moderno
+   ======================================== */
 h1 {
     text-align: center;
     color: #ffffff;
@@ -42,6 +64,10 @@ h1 {
     background-clip: text;
 }
 
+/* ========================================
+   STEP INDICATOR - INDICADOR DE PASSO
+   Mostra qual passo do formulário está ativo
+   ======================================== */
 #step-indicator {
     text-align: center;
     color: #666;
@@ -52,6 +78,10 @@ h1 {
     text-transform: uppercase;
 }
 
+/* ========================================
+   STEP - ANIMAÇÃO DE TRANSIÇÃO
+   Animação suave ao trocar de passo
+   ======================================== */
 .step {
     animation: fadeIn 0.3s ease-in;
 }
@@ -67,6 +97,10 @@ h1 {
     }
 }
 
+/* ========================================
+   H2 - SUBTÍTULOS
+   Títulos de cada seção do formulário
+   ======================================== */
 h2 {
     color: #ffffff;
     margin-bottom: 24px;
@@ -75,6 +109,11 @@ h2 {
     letter-spacing: -0.3px;
 }
 
+/* ========================================
+   INPUTS - CAMPOS DE FORMULÁRIO
+   Estilo moderno com bordas sutis e fundo escuro
+   Animação de elevação ao focar
+   ======================================== */
 input[type="number"],
 input[type="text"],
 input[type="email"],
@@ -90,6 +129,10 @@ input[type="tel"] {
     color: #ffffff;
 }
 
+/* ========================================
+   INPUT FOCUS - ESTADO AO FOCAR
+   Borda vermelha brilhante e sombra colorida
+   ======================================== */
 input:focus {
     outline: none;
     border-color: #c0392b;
@@ -97,10 +140,18 @@ input:focus {
     transform: translateY(-2px);
 }
 
+/* ========================================
+   FORM GROUP - GRUPO DE CAMPO
+   Container para label e input
+   ======================================== */
 .form-group {
     margin-bottom: 20px;
 }
 
+/* ========================================
+   LABELS - RÓTULOS DOS CAMPOS
+   Texto cinza claro com espaçamento refinado
+   ======================================== */
 .form-group label {
     display: block;
     margin-bottom: 10px;
@@ -110,6 +161,10 @@ input:focus {
     letter-spacing: 0.3px;
 }
 
+/* ========================================
+   OPÇÃO CONTRATAÇÃO - BOTÕES DE SELEÇÃO
+   Estilo de botão customizado para radio buttons
+   ======================================== */
 .opcao-contratacao {
     display: block;
     width: 100%;
@@ -126,12 +181,20 @@ input:focus {
     font-weight: 500;
 }
 
+/* ========================================
+   OPÇÃO HOVER - AO PASSAR O MOUSE
+   Borda vermelha sutil e elevação
+   ======================================== */
 .opcao-contratacao:hover {
     border-color: rgba(192, 57, 43, 0.5);
     background: rgba(192, 57, 43, 0.1);
     transform: translateY(-2px);
 }
 
+/* ========================================
+   OPÇÃO SELECTED - SELECIONADA
+   Gradiente vermelho com sombra colorida
+   ======================================== */
 .opcao-contratacao.selected {
     border-color: #c0392b;
     background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
@@ -140,10 +203,18 @@ input:focus {
     transform: translateY(-2px);
 }
 
+/* ========================================
+   OPÇÃO INPUT - ESCONDE RADIO ORIGINAL
+    Oculta o radio button padrão do navegador
+   ======================================== */
 .opcao-contratacao input {
     display: none;
 }
 
+/* ========================================
+   BUTTONS - CONTAINER DE BOTÕES
+   Layout flexível com espaçamento
+   ======================================== */
 .buttons {
     display: flex;
     justify-content: space-between;
@@ -151,6 +222,10 @@ input:focus {
     margin-top: 20px;
 }
 
+/* ========================================
+   BOTÕES - ESTILO BASE
+   Padding generoso e bordas arredondadas
+   ======================================== */
 .btn-back,
 .btn-next,
 .btn-submit {
@@ -164,17 +239,29 @@ input:focus {
     letter-spacing: 0.3px;
 }
 
+/* ========================================
+   BOTÃO VOLTAR - ESTILO SECUNDÁRIO
+   Fundo translúcido com borda sutil
+   ======================================== */
 .btn-back {
     background: rgba(255, 255, 255, 0.1);
     color: #ffffff;
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+/* ========================================
+   BOTÃO VOLTAR HOVER
+   Fundo mais claro ao passar o mouse
+   ======================================== */
 .btn-back:hover {
     background: rgba(255, 255, 255, 0.2);
     transform: translateY(-2px);
 }
 
+/* ========================================
+   BOTÕES PRÓXIMO/SUBMIT - ESTILO PRIMÁRIO
+   Gradiente vermelho com sombra colorida
+   ======================================== */
 .btn-next,
 .btn-submit {
     background: linear-gradient(135deg, #c0392b 0%, #e74c3c 100%);
@@ -182,16 +269,28 @@ input:focus {
     box-shadow: 0 4px 15px rgba(192, 57, 43, 0.3);
 }
 
+/* ========================================
+   BOTÕES PRÓXIMO/SUBMIT HOVER
+   Elevação e sombra mais intensa
+   ======================================== */
 .btn-next:hover,
 .btn-submit:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(192, 57, 43, 0.5);
 }
 
+/* ========================================
+   BOTÃO PRÓXIMO - POSICIONAMENTO
+    Empurra para a direita com auto margin
+   ======================================== */
 .btn-next {
     margin-left: auto;
 }
 
+/* ========================================
+   RESUMO CADASTRO - ÁREA DE RESUMO
+   Fundo escuro translúcido com borda sutil
+   ======================================== */
 #resumo-cadastro {
     background: rgba(26, 26, 26, 0.6);
     padding: 24px;
@@ -200,18 +299,30 @@ input:focus {
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* ========================================
+   RESUMO ITEM - CADA ITEM DO RESUMO
+   Separador visual entre itens
+   ======================================== */
 .resumo-item {
     margin-bottom: 16px;
     padding-bottom: 16px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+/* ========================================
+   RESUMO ITEM LAST - ÚLTIMO ITEM
+   Remove borda do último item
+   ======================================== */
 .resumo-item:last-child {
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
 }
 
+/* ========================================
+   RESUMO LABEL - RÓTULO DO CAMPO
+   Texto vermelho em uppercase
+   ======================================== */
 .resumo-label {
     font-weight: 600;
     color: #c0392b;
@@ -221,11 +332,19 @@ input:focus {
     letter-spacing: 0.5px;
 }
 
+/* ========================================
+   RESUMO VALOR - VALOR DO CAMPO
+   Texto cinza claro com tamanho maior
+   ======================================== */
 .resumo-valor {
     color: #e0e0e0;
     font-size: 15px;
 }
 
+/* ========================================
+   ERROR - MENSAGEM DE ERRO
+   Texto vermelho, oculto por padrão
+   ======================================== */
 .error {
     color: #e74c3c;
     font-size: 14px;
@@ -234,6 +353,10 @@ input:focus {
     display: none;
 }
 
+/* ========================================
+   ERROR SHOW - EXIBIR ERRO
+   Classe para mostrar mensagem de erro
+   ======================================== */
 .error.show {
     display: block;
 }

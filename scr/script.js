@@ -42,11 +42,11 @@ function mostrarOpcoesContratacao(idade) {
 
     let opcoes = [];
 
-    if (idade >= 14 && idade <= 17) {
+    if (idade >= 14 && idade <= 15) {
         opcoes = [
             { valor: 'menor_aprendiz', texto: 'Menor Aprendiz' }
         ];
-    } else if (idade >= 18 && idade <= 25) {
+    } else if (idade >= 16 && idade <= 24) {
         opcoes = [
             { valor: 'jovem_aprendiz', texto: 'Jovem Aprendiz' },
             { valor: 'clt', texto: 'CLT' }
